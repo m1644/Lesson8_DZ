@@ -28,7 +28,7 @@ void CreateArray(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-        array[i, j] = new Random().Next(range);
+            array[i, j] = new Random().Next(range);
         }
     }
 }
