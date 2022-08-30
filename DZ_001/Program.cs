@@ -5,6 +5,14 @@ int n = 8;
 int range = 100;
 int[,] array = new int[m, n];
 
+Console.WriteLine($"\nЗаданый массив: ");
+CreateArray(array);
+PrintArray(array);
+
+Console.WriteLine($"\nОтсортированный массив: ");
+SortArrayLines(array);
+PrintArray(array);
+
 void CreateArray(int[,] array)
 {
   for (int i = 0; i < array.GetLength(0); i++)
@@ -46,11 +54,3 @@ void SortArrayLines(int[,] array)
     }
   }
 }
-
-Console.WriteLine($"\nЗаданый массив: ");
-CreateArray(array);
-PrintArray(array);
-
-Console.WriteLine($"\nОтсортированный массив: ");
-SortArrayLines(array);
-PrintArray(array);
